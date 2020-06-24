@@ -4,7 +4,7 @@ import Title from "../Title.jsx";
 function Nav() {
 
     return(
-      <nav class="nav">
+      <nav className="nav">
         <Title
           center={<h2>Navigation </h2>}
         />

@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 import Title from "../Title.jsx";
 
 function Header() {
@@ -10,8 +11,8 @@ function Header() {
         />
         <nav className="menu">
           <ul className="menu__list">
-            <li className="menu__item"><a href="">Связанный список</a></li>
-            <li className="menu__item"><a href="">Бинарное дерево поиска</a></li>
+            <li className="menu__item"><NavLink to="/home">Связанный список</NavLink></li>
+            <li className="menu__item"><NavLink to="/huffman-tree">Дерево Хаффмана</NavLink></li>
           </ul>
         </nav>
       </header>

@@ -1,20 +1,29 @@
 import React, { Component} from "react";
 import Header from "./components/layout/Header.jsx";
-import Content from "./components/layout/Content.jsx";
-import Nav from "./components/layout/Nav.jsx";
-import Aside from "./components/layout/Aside.jsx";
-import Footer from "./components/layout/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import HuffmanTree from "./pages/HuffmanTree.jsx";
+import {
+  Route,
+  Switch,
+  Redirect,
+  withRouter
+} from "react-router-dom";
 import "./styles/reset.css";
 import "./styles/app.css";
 
 class App extends Component{
   render(){
-    return(
+    const { history } = this.props
+    return (
       <div className="app">
         <Header></Header>
-        <div class="main">
-          <Nav></Nav>
-          <Content></Content>
+        <div className="main">
+          <Switch>
+              <Route history={history} path='/home' component={Home} />
+              <Route history={history} path='/b-tree' component={Home} />
+              <Route history={history} path='/huffman-tree' component={HuffmanTree} />
+              <Redirect from='/' to='/home'/>
+          </Switch>
           {/* <Aside/> */}
         </div>
         {/* <Footer></Footer> */}
