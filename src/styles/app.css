@@ -1,0 +1,115 @@
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  height: 44px;
+  display: flex;
+}
+
+.menu__list {
+  display: flex;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #f0f0f0;
+}
+  
+.menu__item {
+  display: flex;
+  padding: 10px 5px;
+}
+
+.menu__item > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu__item:hover {
+  color: #FFBA82;
+  cursor: pointer;
+}
+
+.contents {
+
+}
+
+.contents__section {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.contents__section:hover {
+  background-color: #E9E5E6;
+  cursor: pointer;
+}
+
+.contents__section > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #49595E;
+  height: 96px;
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header > .title {
+  color: #E7E3E5;
+  font-size: 34px;
+  height: 52px;
+}
+
+.header > .menu {
+  padding-left: 204px;
+}
+  
+.main {
+  display: flex;
+  min-height: calc(100vh - 236px);
+  justify-content: center;
+}
+  
+.footer {
+  background: yellowgreen;
+  min-height: 110px;
+  padding: 5px 10px;
+}
+  
+.main > .nav {
+  flex: 0 0 280px;
+  background: beige;
+}
+  
+.main-content {
+  flex: 0 1 680px;
+  min-width: 320px;
+  padding: 10px 15px;
+}
+
+.main-aside {
+  background-color: cadetblue;
+  flex: 0 0 280px;
+  padding: 5px 10px;
+}
+
+.nav {
+  background-color: #FDF0EB;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.nav > .title {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title__item-left {
+    
+}
